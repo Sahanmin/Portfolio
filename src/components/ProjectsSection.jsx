@@ -3,38 +3,51 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Data Migration Automation",
-    description: "Automated changelog creation for data migration tasks between Oracle and PostgreSQL databases using Python tools.",
-    image: "/projects/project1.png",
-    tags: ["Python", "PostgreSQL", "Oracle", "Automation"],
-    demoUrl: "#",
+    title: "RPPG based neonatal Health Monitoring System",
+    description: "Developing a contactless neonatal monitoring system using rPPG signals to estimate heart rate, SpO2, blood pressure, and defect/jaundice detection. Designing a mobile-based solution with privacy-preserving techniques for non-invasive, practical, and parent-friendly neonatal care.",
+    image: "/baby.png",
+    tags: ["Python", "Computer Vision", "Healthcare", "Raspberry Pi"],
+    status: "Ongoing",
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "System Modernization",
-    description: "Converted a legacy trading system from C++ to Rust, leading to improved performance and resource efficiency.",
+    title: "ROBOVOX: Far-Field Speaker Verification Robot",
+    description: "Far-field, text-independent speaker recognition by a mobile robot—tackling speaker verification under realistic conditions such as ambient noise, reverberation, varying distances, internal robot noise and speaker-to-robot angle variability. Developed robust deep learning pipelines using speaker-embedding models (e.g., ResNet and ECAPA-TDNN), advanced data augmentation, and score calibration techniques.",
     image: "/projects/project2.png",
-    tags: ["Rust", "C++", "System Design", "Trading Systems"],
-    demoUrl: "#",
+    tags: ["Python", "Robotics", "Machine Learning", "ResNet", "ECAPA-TDNN"],
     githubUrl: "#",
   },
   {
     id: 3,
-    title: "Kubernetes Deployment",
-    description: "Contributed to deploying a high-performance trading system in Kubernetes, enhancing scalability and maintainability.",
+    title: "VR based Speech Practicing Platform",
+    description: "Developed a VR application using Unity and Meta Quest platforms to help users overcome stage fear and improve public-speaking confidence. Features include multiple virtual venues, customizable audiences, real-time anxiety tracking, and AI-powered feedback for personalized performance improvement.",
     image: "/projects/project3.png",
-    tags: ["Kubernetes", "Docker", "DevOps", "Cloud"],
-    demoUrl: "#",
+    tags: ["Unity", "VR", "C#", "Meta Quest"],
     githubUrl: "#",
   },
   {
     id: 4,
-    title: "Chaos Engineering",
-    description: "Performed resilience testing on Kubernetes-deployed trading system using LitmusChaos to identify vulnerabilities.",
+    title: "Analog Wall Following Robot",
+    description: "Designed and built an analog wall following robot that navigates the midpoint between two walls using IR sensors and a PID control circuit, without microcontrollers. Key tasks included designing instrumentation amplifiers, PID circuits, PWM generators and motor drivers.",
     image: "/projects/project1.png",
-    tags: ["LitmusChaos", "Kubernetes", "Testing", "Reliability"],
-    demoUrl: "#",
+    tags: ["Electronics", "PID Control", "Embedded Systems", "Circuit Design"],
+    githubUrl: "#",
+  },
+  {
+    id: 5,
+    title: "Smart Plug",
+    description: "Developed smart extension cord, an IoT integrated smart extension cord powered by ESP8266 and Atmega328. Features include voice control with Google Assistant and Amazon Alexa, Google Home integration, scheduling via Google Calendar, remote control and USB adaptive charging. Addressed safety concerns by creating an automatic power down feature for irons.",
+    image: "/projects/project2.png",
+    tags: ["IoT", "ESP8266", "Arduino", "Google Home", "Alexa"],
+    githubUrl: "#",
+  },
+  {
+    id: 6,
+    title: "Agni Robot",
+    description: "Developed the AGNI Robot powered by Arduino Mega 2560, featuring precise line following, wall avoidance, maze navigation (20 degrees), object interaction with a mechanical arm, sound sensitivity, color detection, maze-traversing capabilities, and obstacle avoidance, including guard robots.",
+    image: "/projects/project3.png",
+    tags: ["Arduino", "Robotics", "Sensors", "Autonomous Navigation"],
     githubUrl: "#",
   },
 ];
@@ -44,13 +57,11 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {" "}
-          Work <span className="text-primary"> Experience </span>
+          My <span className="text-primary">Projects</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Key projects and contributions from my internship at London Stock Exchange Group (LSEG) 
-          and academic work at University of Moratuwa.
+          Robotics, embedded systems, and AI projects showcasing innovation in healthcare, automation, and human-computer interaction.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -59,18 +70,23 @@ export const ProjectsSection = () => {
               key={key}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden relative">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
+                {project.status && (
+                  <span className="absolute top-3 right-3 px-3 py-1 text-xs font-semibold rounded-full bg-primary text-primary-foreground">
+                    {project.status}
+                  </span>
+                )}
               </div>
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                    <span key={tag} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                       {tag}
                     </span>
                   ))}
@@ -82,13 +98,6 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
                     <a
                       href={project.githubUrl}
                       target="_blank"

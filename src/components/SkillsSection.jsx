@@ -1,86 +1,94 @@
-import { useState } from "react";
-import { cn } from "@/lib/utils";
-
-const skills = [
-  // Programming Languages
-  { name: "Python", level: 95, category: "languages" },
-  { name: "C++", level: 85, category: "languages" },
-  { name: "Rust", level: 75, category: "languages" },
-  { name: "JavaScript", level: 80, category: "languages" },
-  { name: "SQL", level: 85, category: "languages" },
-
-  // Backend & Databases
-  { name: "PostgreSQL", level: 90, category: "backend" },
-  { name: "Oracle DB", level: 85, category: "backend" },
-  { name: "MongoDB", level: 75, category: "backend" },
-  { name: "Node.js", level: 70, category: "backend" },
-
-  // DevOps & Cloud
-  { name: "Kubernetes", level: 80, category: "devops" },
-  { name: "Docker", level: 85, category: "devops" },
-  { name: "Linux/Chaos Eng", level: 85, category: "devops" },
-  { name: "Git/GitHub", level: 90, category: "devops" },
-
-  // Electronics & Embedded
-  { name: "Image Processing", level: 80, category: "embedded" },
-  { name: "Computer Vision", level: 75, category: "embedded" },
-  { name: "Raspberry Pi", level: 85, category: "embedded" },
-  { name: "Circuit Design", level: 80, category: "embedded" },
-  { name: "Robotics", level: 75, category: "embedded" },
+const skillCategories = [
+  {
+    title: "FRONTEND",
+    skills: [
+      { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+      { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+      { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+    ]
+  },
+  {
+    title: "BACKEND",
+    skills: [
+      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+    ]
+  },
+  {
+    title: "FRAMEWORKS & LIBRARIES",
+    skills: [
+      { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+      { name: "OpenCV", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" },
+    ]
+  },
+  {
+    title: "DATABASES",
+    skills: [
+      { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+      { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+      { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+      { name: "Oracle DB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" },
+    ]
+  },
+  {
+    title: "DEVOPS & TOOLS",
+    skills: [
+      { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+      { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" },
+      { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+      { name: "LitmusChaos", icon: "/litmus.png" },
+    ]
+  },
+  {
+    title: "HARDWARE & EMBEDDED",
+    skills: [
+      { name: "Arduino", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" },
+      { name: "Raspberry Pi", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" },
+      { name: "SolidWorks", icon: "https://upload.wikimedia.org/wikipedia/en/d/d2/SolidWorks_Logo.svg" },
+      { name: "Altium", icon: "https://static.cdnlogo.com/logos/a/30/altium.svg" },
+    ]
+  }
 ];
 
-const categories = ["all", "languages", "backend", "devops", "embedded"];
-
 export const SkillsSection = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
-
-  const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
-  );
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
-      <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary"> Skills</span>
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
+          <span className="text-primary">Skills</span>
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category, key) => (
-            <button
-              key={key}
-              onClick={() => setActiveCategory(category)}
-              className={cn(
-                "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
-                activeCategory === category
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-forefround hover:bd-secondary"
-              )}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSkills.map((skill, key) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {skillCategories.map((category, idx) => (
             <div
-              key={key}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover"
+              key={idx}
+              className="bg-card/50 backdrop-blur-sm p-6 rounded-lg border border-primary/20 hover:border-primary/40 transition-all duration-300"
             >
-              <div className="text-left mb-4">
-                <h3 className="font-semibold text-lg"> {skill.name}</h3>
-              </div>
-              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                <div
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                  style={{ width: skill.level + "%" }}
-                />
-              </div>
-
-              <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
-                  {skill.level}%
-                </span>
+              <h3 className="text-primary text-sm font-bold mb-6 tracking-wider">
+                {category.title}
+              </h3>
+              <div className="grid grid-cols-2 gap-6">
+                {category.skills.map((skill, skillIdx) => (
+                  <div
+                    key={skillIdx}
+                    className="flex flex-col items-center justify-center gap-2 p-3 rounded-lg hover:bg-secondary/30 transition-all duration-300 hover:scale-105 group"
+                  >
+                    <div className={`w-12 h-12 flex items-center justify-center ${skill.name === 'Rust' ? 'bg-white rounded-md p-1' : ''}`}>
+                      <img
+                        src={skill.icon}
+                        alt={skill.name}
+                        className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                        }}
+                      />
+                    </div>
+                    <span className="text-xs font-medium text-center text-muted-foreground">
+                      {skill.name}
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
           ))}

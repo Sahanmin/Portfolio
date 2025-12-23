@@ -1,4 +1,5 @@
 import { GraduationCap } from "lucide-react";
+import uomLogo from "../assets/uom_logo-removebg-preview.png";
 
 export const HeroSection = () => {
   return (
@@ -38,7 +39,7 @@ export const HeroSection = () => {
               </h2>
 
               <div className="flex items-center gap-3 text-lg md:text-xl text-gray-400 opacity-0 animate-fade-in-delay-4">
-                <GraduationCap className="w-6 h-6 text-yellow-600" />
+                <img src={uomLogo} alt="University of Moratuwa" className="w-6 h-6 object-contain" />
                 <p>Final Year Undergraduate at University of Moratuwa</p>
               </div>
             </div>
