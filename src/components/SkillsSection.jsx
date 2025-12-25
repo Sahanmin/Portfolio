@@ -1,3 +1,5 @@
+import { getImagePath } from "../utils/imagePath";
+
 const skillCategories = [
   {
     title: "FRONTEND",
@@ -37,7 +39,7 @@ const skillCategories = [
       { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
       { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" },
       { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-      { name: "LitmusChaos", icon: "/litmus.png" },
+      { name: "LitmusChaos", icon: getImagePath("litmus.png") },
     ]
   },
   {

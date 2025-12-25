@@ -1,11 +1,12 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { getImagePath } from "../utils/imagePath";
 
 const projects = [
   {
     id: 1,
     title: "RPPG based neonatal Health Monitoring System",
     description: "Developing a contactless neonatal monitoring system using rPPG signals to estimate heart rate, SpO2, blood pressure, and defect/jaundice detection. Designing a mobile-based solution with privacy-preserving techniques for non-invasive, practical, and parent-friendly neonatal care.",
-    image: "/baby.png",
+    image: getImagePath("baby.png"),
     tags: ["Python", "Computer Vision", "Healthcare", "Raspberry Pi"],
     status: "Ongoing",
     githubUrl: "#",
@@ -14,7 +15,7 @@ const projects = [
     id: 2,
     title: "ROBOVOX: Far-Field Speaker Verification Robot",
     description: "Far-field, text-independent speaker recognition by a mobile robot—tackling speaker verification under realistic conditions such as ambient noise, reverberation, varying distances, internal robot noise and speaker-to-robot angle variability. Developed robust deep learning pipelines using speaker-embedding models (e.g., ResNet and ECAPA-TDNN), advanced data augmentation, and score calibration techniques.",
-    image: "/projects/project2.png",
+    image: getImagePath("projects/project2.png"),
     tags: ["Python", "Robotics", "Machine Learning", "ResNet", "ECAPA-TDNN"],
     githubUrl: "#",
   },
@@ -22,7 +23,7 @@ const projects = [
     id: 3,
     title: "VR based Speech Practicing Platform",
     description: "Developed a VR application using Unity and Meta Quest platforms to help users overcome stage fear and improve public-speaking confidence. Features include multiple virtual venues, customizable audiences, real-time anxiety tracking, and AI-powered feedback for personalized performance improvement.",
-    image: "/projects/project3.png",
+    image: getImagePath("projects/project3.png"),
     tags: ["Unity", "VR", "C#", "Meta Quest"],
     githubUrl: "#",
   },
@@ -30,7 +31,7 @@ const projects = [
     id: 4,
     title: "Analog Wall Following Robot",
     description: "Designed and built an analog wall following robot that navigates the midpoint between two walls using IR sensors and a PID control circuit, without microcontrollers. Key tasks included designing instrumentation amplifiers, PID circuits, PWM generators and motor drivers.",
-    image: "/projects/project1.png",
+    image: getImagePath("projects/project1.png"),
     tags: ["Electronics", "PID Control", "Embedded Systems", "Circuit Design"],
     githubUrl: "#",
   },
@@ -38,7 +39,7 @@ const projects = [
     id: 5,
     title: "Smart Plug",
     description: "Developed smart extension cord, an IoT integrated smart extension cord powered by ESP8266 and Atmega328. Features include voice control with Google Assistant and Amazon Alexa, Google Home integration, scheduling via Google Calendar, remote control and USB adaptive charging. Addressed safety concerns by creating an automatic power down feature for irons.",
-    image: "/projects/project2.png",
+    image: getImagePath("projects/project2.png"),
     tags: ["IoT", "ESP8266", "Arduino", "Google Home", "Alexa"],
     githubUrl: "#",
   },
@@ -46,7 +47,7 @@ const projects = [
     id: 6,
     title: "Agni Robot",
     description: "Developed the AGNI Robot powered by Arduino Mega 2560, featuring precise line following, wall avoidance, maze navigation (20 degrees), object interaction with a mechanical arm, sound sensitivity, color detection, maze-traversing capabilities, and obstacle avoidance, including guard robots.",
-    image: "/projects/project3.png",
+    image: getImagePath("projects/project3.png"),
     tags: ["Arduino", "Robotics", "Sensors", "Autonomous Navigation"],
     githubUrl: "#",
   },
@@ -116,7 +117,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/Sahanmin"
           >
             Check My Github <ArrowRight size={16} />
           </a>

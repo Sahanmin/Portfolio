@@ -1,6 +1,7 @@
 import { Database, Wrench, Rocket, Server, GraduationCap, Users } from "lucide-react";
 import lsegLogo from "../assets/lseg_logo-removebg-preview.png";
 import uomLogo from "../assets/uom_logo-removebg-preview.png";
+import { getImagePath } from "../utils/imagePath";
 
 export const ExperienceSection = () => {
   const experiences = [
@@ -12,7 +13,7 @@ export const ExperienceSection = () => {
       period: "Dec 2024 - May 2025",
       description: "Contributing to high-performance trading systems at one of the world's leading financial market infrastructures.",
       logo: lsegLogo,
-      images: ["/lseg2.png", "/lseg1.png", "/lseg3.png"],
+      images: [getImagePath("lseg2.png"), getImagePath("lseg1.png"), getImagePath("lseg3.png")],
       highlights: [
         {
           icon: Database,
