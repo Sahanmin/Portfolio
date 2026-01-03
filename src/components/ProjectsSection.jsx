@@ -29,10 +29,10 @@ const projects = [
   },
   {
     id: 4,
-    title: "Analog Wall Following Robot",
-    description: "Designed and built an analog wall following robot that navigates the midpoint between two walls using IR sensors and a PID control circuit, without microcontrollers. Key tasks included designing instrumentation amplifiers, PID circuits, PWM generators and motor drivers.",
+    title: "WealthWave: Modern Full-Stack Banking Platform",
+    description: "Built a production-ready fintech platform for real-time banking and secure fund transfers using Next.js 14 and Appwrite. Integrated Plaid and Dwolla APIs to enable multi-bank account aggregation and seamless ACH payment processing. Implemented Server Actions and Zod validation to ensure enterprise-grade security and performance, featuring a responsive financial dashboard built with TailwindCSS and Chart.js.",
     image: getImagePath("projects/project1.png"),
-    tags: ["Electronics", "PID Control", "Embedded Systems", "Circuit Design"],
+    tags: ["Next.js 14", "TypeScript", "Appwrite", "Plaid", "Dwolla", "TailwindCSS", "Chart.js"],
     githubUrl: "#",
   },
   {
