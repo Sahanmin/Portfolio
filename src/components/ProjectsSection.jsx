@@ -25,7 +25,7 @@ const projects = [
     description: "Developed an AI-powered web platform for predictive transformer maintenance, featuring automated thermal anomaly detection via baseline image comparison. Implemented a 'human-in-the-loop' workflow allowing engineers to refine AI detections for model retraining, and automated the generation of comprehensive maintenance records to streamline inspection documentation.",
     image: getImagePath("projects/project3.png"),
     tags: ["React.js", "Python", "Spring Boot", "TensorFlow", "PostgreSQL", "Docker"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/Web-Wizards-ENTC/Transformer",
   },
   {
     id: 4,
