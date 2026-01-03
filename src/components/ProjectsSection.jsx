@@ -13,10 +13,10 @@ const projects = [
   },
   {
     id: 2,
-    title: "ROBOVOX: Far-Field Speaker Verification Robot",
-    description: "Far-field, text-independent speaker recognition by a mobile robot—tackling speaker verification under realistic conditions such as ambient noise, reverberation, varying distances, internal robot noise and speaker-to-robot angle variability. Developed robust deep learning pipelines using speaker-embedding models (e.g., ResNet and ECAPA-TDNN), advanced data augmentation, and score calibration techniques.",
+    title: "FAISS-Vectorized Research Document QA Engine",
+    description: "Built an end-to-end AI application for academic paper analysis featuring automated summarization and RAG-based QA. Integrated Groq's Llama 3.3 model with LangChain orchestration, FAISS vector search, and HuggingFace embeddings to enable semantic understanding of research documents. Implemented PDF processing pipeline and responsive web interface.",
     image: getImagePath("projects/project2.png"),
-    tags: ["Python", "Robotics", "Machine Learning", "ResNet", "ECAPA-TDNN"],
+    tags: ["Python", "Flask", "LangChain", "Groq LLM", "FAISS", "HuggingFace", "PyMuPDF"],
     githubUrl: "#",
   },
   {
