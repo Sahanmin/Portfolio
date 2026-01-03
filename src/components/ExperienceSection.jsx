@@ -13,7 +13,7 @@ export const ExperienceSection = () => {
       period: "Dec 2024 - May 2025",
       description: "Contributing to high-performance trading systems at one of the world's leading financial market infrastructures.",
       logo: lsegLogo,
-      images: [getImagePath("lseg2.png"), getImagePath("lseg1.png"), getImagePath("lseg3.png")],
+      images: [getImagePath("lseg2.png"), getImagePath("lseg1.png"), getImagePath("Lseg3.png")],
       highlights: [
         {
           icon: Database,
