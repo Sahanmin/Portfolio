@@ -17,7 +17,7 @@ export const MilestonesSection = () => {
     {
       year: "2024",
       title: "Dean's List Recognition",
-      description: "Achieved Dean's List in Semester 6, maintaining 3.82/4.0 CGPA",
+      description: "Achieved Dean's List in Semester 1, 2, 4 and 6, maintaining 3.82/4.0 CGPA",
       status: "completed",
     },
     {
@@ -53,19 +53,17 @@ export const MilestonesSection = () => {
               {milestones.map((milestone, index) => (
                 <div
                   key={index}
-                  className={`relative flex items-center ${
-                    index % 2 === 0
+                  className={`relative flex items-center ${index % 2 === 0
                       ? "md:flex-row"
                       : "md:flex-row-reverse"
-                  } flex-row`}
+                    } flex-row`}
                 >
                   {/* Year indicator */}
                   <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 flex items-center justify-center">
-                    <div className={`w-16 h-16 rounded-full flex items-center justify-center ${
-                      milestone.status === "current"
+                    <div className={`w-16 h-16 rounded-full flex items-center justify-center ${milestone.status === "current"
                         ? "bg-pink-600 border-4 border-pink-400"
                         : "bg-purple-600 border-4 border-purple-400"
-                    }`}>
+                      }`}>
                       {milestone.status === "current" ? (
                         <Calendar className="w-8 h-8 text-white" />
                       ) : (
@@ -76,23 +74,20 @@ export const MilestonesSection = () => {
 
                   {/* Content */}
                   <div
-                    className={`ml-24 md:ml-0 ${
-                      index % 2 === 0
+                    className={`ml-24 md:ml-0 ${index % 2 === 0
                         ? "md:pr-[calc(50%+3rem)]"
                         : "md:pl-[calc(50%+3rem)]"
-                    } md:w-full`}
+                      } md:w-full`}
                   >
-                    <div className={`bg-card border border-border rounded-lg p-6 hover:border-pink-500 transition-all duration-300 hover:shadow-lg ${
-                      milestone.status === "current"
+                    <div className={`bg-card border border-border rounded-lg p-6 hover:border-pink-500 transition-all duration-300 hover:shadow-lg ${milestone.status === "current"
                         ? "hover:shadow-pink-500/20"
                         : "hover:shadow-purple-500/20"
-                    }`}>
+                      }`}>
                       <div className="space-y-2">
-                        <span className={`text-sm font-bold ${
-                          milestone.status === "current"
+                        <span className={`text-sm font-bold ${milestone.status === "current"
                             ? "text-pink-500"
                             : "text-purple-400"
-                        }`}>
+                          }`}>
                           {milestone.year}
                         </span>
                         <h3 className="text-xl font-semibold text-foreground">
