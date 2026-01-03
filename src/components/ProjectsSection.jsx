@@ -47,9 +47,9 @@ const projects = [
     id: 6,
     title: "Agni Robot",
     description: "Developed the AGNI Robot powered by Arduino Mega 2560, featuring precise line following, wall avoidance, maze navigation (20 degrees), object interaction with a mechanical arm, sound sensitivity, color detection, maze-traversing capabilities, and obstacle avoidance, including guard robots.",
-    image: getImagePath("projects/project3.png"),
+    image: getImagePath("projects/agni-robot.jpg"),
     tags: ["Arduino", "Robotics", "Sensors", "Autonomous Navigation"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/Sahanmin/Agni",
   },
 ];
 
