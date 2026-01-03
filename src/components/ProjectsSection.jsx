@@ -119,7 +119,7 @@ export const ProjectsSection = () => {
             target="_blank"
             href="https://github.com/Sahanmin"
           >
-            Check My Github <ArrowRight size={16} />
+            More Projects <ArrowRight size={16} />
           </a>
         </div>
       </div>
