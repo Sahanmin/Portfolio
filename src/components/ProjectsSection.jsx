@@ -37,10 +37,10 @@ const projects = [
   },
   {
     id: 5,
-    title: "Smart Plug",
-    description: "Developed smart extension cord, an IoT integrated smart extension cord powered by ESP8266 and Atmega328. Features include voice control with Google Assistant and Amazon Alexa, Google Home integration, scheduling via Google Calendar, remote control and USB adaptive charging. Addressed safety concerns by creating an automatic power down feature for irons.",
+    title: "VR Based Speech Practicing Platform",
+    description: "Developed a VR application using Unity and Meta Quest platforms to help users overcome stage fear and improve public-speaking confidence. Features include multiple virtual venues, customizable audiences, real-time anxiety tracking, and AI-powered feedback for personalized performance improvement.",
     image: getImagePath("projects/project2.png"),
-    tags: ["IoT", "ESP8266", "Arduino", "Google Home", "Alexa"],
+    tags: ["Unity", "React", "Python", "PostgreSQL", "Java"],
     githubUrl: "#",
   },
   {
