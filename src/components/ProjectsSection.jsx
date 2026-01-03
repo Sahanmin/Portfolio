@@ -21,10 +21,10 @@ const projects = [
   },
   {
     id: 3,
-    title: "VR based Speech Practicing Platform",
-    description: "Developed a VR application using Unity and Meta Quest platforms to help users overcome stage fear and improve public-speaking confidence. Features include multiple virtual venues, customizable audiences, real-time anxiety tracking, and AI-powered feedback for personalized performance improvement.",
+    title: "AI-Powered Transformer Maintenance System",
+    description: "Developed an AI-powered web platform for predictive transformer maintenance, featuring automated thermal anomaly detection via baseline image comparison. Implemented a 'human-in-the-loop' workflow allowing engineers to refine AI detections for model retraining, and automated the generation of comprehensive maintenance records to streamline inspection documentation.",
     image: getImagePath("projects/project3.png"),
-    tags: ["Unity", "VR", "C#", "Meta Quest"],
+    tags: ["React.js", "Python", "Spring Boot", "TensorFlow", "PostgreSQL", "Docker"],
     githubUrl: "#",
   },
   {
