@@ -12,18 +12,18 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Software Engineering Intern & ENTC Undergraduate
+              Code. Communicate. Create
             </h3>
 
             <p className="text-muted-foreground">
-              Currently pursuing my undergraduate degree in Electronics and Telecommunication Engineering 
-              at the University of Moratuwa (CGPA: 3.82/4.0). I'm passionate about software development, 
+              Currently pursuing my undergraduate degree in Electronics and Telecommunication Engineering
+              at the University of Moratuwa (CGPA: 3.82/4.0). I'm passionate about software development,
               system design, and cutting-edge technologies.
             </p>
 
             <p className="text-muted-foreground">
-              At London Stock Exchange Group (LSEG), I work on data migration automation, chaos engineering, 
-              system modernization, and Kubernetes deployment. I've gained hands-on experience in Python, 
+              At London Stock Exchange Group (LSEG), I work on data migration automation, chaos engineering,
+              system modernization, and Kubernetes deployment. I've gained hands-on experience in Python,
               Rust, C++, and various cloud technologies while contributing to high-performance trading systems.
             </p>
 
