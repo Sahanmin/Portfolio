@@ -15,7 +15,7 @@ const projects = [
     id: 2,
     title: "FAISS-Vectorized Research Document QA Engine",
     description: "Built an end-to-end AI application for academic paper analysis featuring automated summarization and RAG-based QA. Integrated Groq's Llama 3.3 model with LangChain orchestration, FAISS vector search, and HuggingFace embeddings to enable semantic understanding of research documents. Implemented PDF processing pipeline and responsive web interface.",
-    image: getImagePath("projects/project2.png"),
+    image: getImagePath("projects/research-portal.png"),
     tags: ["Python", "Flask", "LangChain", "Groq LLM", "FAISS", "HuggingFace", "PyMuPDF"],
     githubUrl: "https://github.com/Sahanmin/ResearchPortal-RAG-Flask",
   },
