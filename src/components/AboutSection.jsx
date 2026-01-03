@@ -16,15 +16,15 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-              Currently pursuing my undergraduate degree in Electronics and Telecommunication Engineering
-              at the University of Moratuwa (CGPA: 3.82/4.0). I'm passionate about software development,
-              system design, and cutting-edge technologies.
+              I am a highly motivated developer driven by a passion for bridging the gap between complex algorithms and human-centric solutions.
             </p>
 
             <p className="text-muted-foreground">
-              At London Stock Exchange Group (LSEG), I work on data migration automation, chaos engineering,
-              system modernization, and Kubernetes deployment. I've gained hands-on experience in Python,
-              Rust, C++, and various cloud technologies while contributing to high-performance trading systems.
+              With a dual focus on Machine Learning and Software Development, I view code as a tool for storytelling—transforming raw data into actionable insights. I pride myself on being an agile learner, capable of mastering new tech stacks rapidly to meet project demands.
+            </p>
+
+            <p className="text-muted-foreground">
+              My technical foundation was solidified during my time as a Software Engineering Intern at the London Stock Exchange Group (LSEG). There, I gained invaluable exposure to enterprise-grade software development, working within high-availability environments where precision and scalability are paramount.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
