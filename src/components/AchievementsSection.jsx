@@ -4,27 +4,27 @@ export const AchievementsSection = () => {
   const achievements = [
     {
       icon: <Trophy className="w-12 h-12 text-yellow-500" />,
-      title: "Dean's List",
-      description: "Achieved Dean's List honors in Semesters 1, 2, 4, and 6 for academic excellence",
-      year: "2022-2025",
+      title: "ICE Ideathon Winners",
+      description: "Prof. Suranga Nanayakkara, National University of Singapore",
+      year: "2024",
     },
     {
       icon: <Award className="w-12 h-12 text-pink-500" />,
-      title: "High CGPA",
-      description: "Maintained 3.82/4.0 CGPA throughout undergraduate studies",
+      title: "SLIOT Finalists",
+      description: "Department of Computer Science Engineering, UoM IESL",
       year: "2024",
     },
     {
       icon: <Medal className="w-12 h-12 text-purple-500" />,
-      title: "LSEG Internship",
-      description: "Software Engineering Intern at London Stock Exchange Group",
-      year: "2024-2025",
+      title: "Signal Processing Cup Top 50",
+      description: "IEEE Signal Processing Society and MathWorks",
+      year: "2024",
     },
     {
       icon: <Star className="w-12 h-12 text-blue-500" />,
-      title: "Teaching Assistant",
-      description: "Teaching Assistant at University of Moratuwa ENTC Department",
-      year: "2025",
+      title: "CodeSprint 8 - Top 10",
+      description: "Ideate Phase - IEEE Student Branch of IIT, IEEE Computer Society",
+      year: "2024",
     },
   ];
 
