@@ -51,7 +51,7 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Software Engineering</h4>
                   <p className="text-muted-foreground">
-                    Data migration, chaos engineering, and system modernization with Python, Rust, and C++.
+                    Experience in working with scrum teams, Problem solving skills, Reliability.
                   </p>
                 </div>
               </div>
@@ -62,9 +62,9 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Embedded Systems</h4>
+                  <h4 className="font-semibold text-lg">Machine Learning</h4>
                   <p className="text-muted-foreground">
-                    Electronics design, IoT development, and Raspberry Pi-based projects.
+                    Hands-on experience, RAG, Computer Vision.
                   </p>
                 </div>
               </div>
@@ -76,9 +76,9 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Cloud & DevOps</h4>
+                  <h4 className="font-semibold text-lg">Embedded Systems</h4>
                   <p className="text-muted-foreground">
-                    Kubernetes deployment, containerization, and scalable system architecture.
+                    Electronics design, IoT development, and Raspberry Pi-based projects.
                   </p>
                 </div>
               </div>
