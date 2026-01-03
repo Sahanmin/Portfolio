@@ -31,9 +31,9 @@ const projects = [
     id: 4,
     title: "WealthWave: Modern Full-Stack Banking Platform",
     description: "Built a production-ready fintech platform for real-time banking and secure fund transfers using Next.js 14 and Appwrite. Integrated Plaid and Dwolla APIs to enable multi-bank account aggregation and seamless ACH payment processing. Implemented Server Actions and Zod validation to ensure enterprise-grade security and performance, featuring a responsive financial dashboard built with TailwindCSS and Chart.js.",
-    image: getImagePath("projects/project1.png"),
+    image: getImagePath("projects/wealthwave-banking.png"),
     tags: ["Next.js 14", "TypeScript", "Appwrite", "Plaid", "Dwolla", "TailwindCSS", "Chart.js"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/Sahanmin/WealthWare-Banking-Application",
   },
   {
     id: 5,
