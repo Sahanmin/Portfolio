@@ -39,9 +39,9 @@ const projects = [
     id: 5,
     title: "VR Based Speech Practicing Platform",
     description: "Developed a VR application using Unity and Meta Quest platforms to help users overcome stage fear and improve public-speaking confidence. Features include multiple virtual venues, customizable audiences, real-time anxiety tracking, and AI-powered feedback for personalized performance improvement.",
-    image: getImagePath("projects/project2.png"),
+    image: getImagePath("projects/vr-speech-platform.png"),
     tags: ["Unity", "React", "Python", "PostgreSQL", "Java"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/Sahanmin/VR-Public-Speaking-Trainer",
   },
   {
     id: 6,
