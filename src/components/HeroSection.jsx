@@ -53,7 +53,9 @@ export const HeroSection = () => {
                 CONTACT ME
               </a>
               <a
-                href="#resume"
+                href="https://drive.google.com/file/d/1RHiUJk_tonbIsPQSZT5cx0m9OweBOZa2/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-3 border-2 border-pink-600 text-pink-500 hover:bg-pink-600/10 font-semibold rounded transition-colors duration-300"
               >
                 VIEW RESUME
